@@ -1,0 +1,23 @@
+{
+  "name": "gohighlevel-autocli",
+  "version": "1.0.0",
+  "description": "CLI to programmatically create GHL workflows with triggers and actions via the hidden internal API",
+  "type": "module",
+  "main": "scripts/build-workflow.mjs",
+  "bin": {
+    "ghl": "./scripts/build-workflow.mjs"
+  },
+  "scripts": {
+    "list": "node scripts/build-workflow.mjs --list",
+    "help": "node scripts/build-workflow.mjs --help"
+  },
+  "keywords": ["gohighlevel", "ghl", "workflow", "automation", "cli", "crm"],
+  "author": "Jake Shore",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
